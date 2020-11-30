@@ -1,7 +1,7 @@
 # Value Network Contracts
 
 ## Setup
-1. Installing dependancies
+1. Installing dependencies
 ```
 npm install
 ```
