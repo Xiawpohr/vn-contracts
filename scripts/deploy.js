@@ -1,13 +1,11 @@
-const tName = 'Test Token'
-const tSymbol = 'TST'
-
 async function main() {
-  // We get the contract to deploy
+  const name = 'Test Token'
+  const symbol = 'TST'
+
   const Token = await ethers.getContractFactory('Token')
-  console.log('Deploying Token...')
-  const token = await Token.deploy(tName, tSymbol)
+  const token = await Token.deploy(name, symbol)
   await token.deployed()
-  console.log('Token deployed to:', token.address)
+  console.log('Token Address:', token.address)
 }
 
 main()
