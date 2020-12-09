@@ -70,7 +70,7 @@ abstract contract ERC20Checkpointable is ERC20 {
         );
     }
 
-    function transferFrom(address _from, address _to, uint256 _value) public override returns (bool) {
+    function transferFrom(address _from, address _to, uint256 _value) public virtual override returns (bool) {
         uint256 previousBalanceFrom = balanceOfAt(_from, _blockNumber());
         require(previousBalanceFrom >= _value, "insufficient-balance");
 
