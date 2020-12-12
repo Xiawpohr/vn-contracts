@@ -36,7 +36,7 @@ npm run test
 ```
 npm run deploy
 ```
-3. Please remember this token address.
+3. Please remember this token addresses.
 
 > Noted: 
 > * The account that you set on `secrets.json` will be admin key of this token.
@@ -47,11 +47,3 @@ npm run deploy
 npx hardhat verify --network mainnet {DEPLOYED_CONTRACT_ADDRESS} "{Constructor argument 1}"
 ```
 You need write your token address and deploying arguments.
-
-## Mint Token
-1. Go to `scripts/mint.js` and edit tokenAddress and amount.
-2. Mint token by running this command.
-```
-npx run mint
-```
-3. TransactionHash will be displayed. You can check it on etherscan.io or any Ethereum Explorer.

@@ -14,7 +14,6 @@
     "deploy:ropsten": "npx hardhat run --network ropsten scripts/deploy.js",
     "deploy:kovan": "npx hardhat run --network kovan scripts/deploy.js",
     "deploy:goerli": "npx hardhat run --network goerli scripts/deploy.js",
-    "mint": "npx hardhat run --network mainnet scripts/mint.js",
     "create-account": "npx mnemonics"
   },
   "keywords": [
